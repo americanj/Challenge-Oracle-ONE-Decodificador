@@ -1,8 +1,88 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    background-color: black;    
+
+
+
+
+body{
+    background-color: #222222;    
 }
 
-.container{
+.logo{
+    margin-left: 50px;
+    margin-top: 30px;
 }
+
+.container-copiar{
+    background: #333333;
+    color: white;
+    position: absolute;
+    float: right;
+    height: 797px;
+    width: 456px;
+    right: 3.8%;
+    top: 9.8%;
+  
+    border-radius: 30px;
+   
+
+}
+
+.container-principal{
+    background: #222222;
+    position: relative;
+    width: 1150px;
+    height: 797px;
+    left: 12%;
+
+
+}
+
+.input-padrao{
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    background: #222222;
+    border: none;
+    outline: none;
+    resize: none;
+    color: palegreen;
+    display: block;
+	padding: 20px 35px;
+	width: 950px;
+    height: 350px;
+    font-size: 45px;
+    font-family: 'Inter', sans-serif;
+}
+.input-padrao::placeholder{
+    color: rgb(138, 214, 138);
+}
+
+.criptografar{
+    position: absolute;
+    bottom: 50px;
+    left: 95px;
+    width: 350px;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 20px;
+    background: palegreen;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.descriptografar{
+    position: absolute;
+    bottom: 50px;
+    left: 550px;
+    width: 350px;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 20px;
+    background: none;
+    border: solid 1px palegreen;
+    color: silver;
+    cursor: pointer;
+}
+
