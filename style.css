@@ -12,18 +12,39 @@ body{
 }
 
 .container-copiar{
+    position: relative;
     background: #333333;
     color: white;
     position: absolute;
     float: right;
-    height: 797px;
+    height: 860px;
     width: 456px;
     right: 3.8%;
-    top: 9.8%;
-  
+    bottom: 56px;
     border-radius: 30px;
-   
+    /*border: solid 1px #eb0000;*/
+}
 
+.render{
+    margin-top: 180px;
+    margin-left: 50px;
+}
+
+.mensagem-encontrada{
+    font-weight: bold;
+    font-size: 33px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+#mensagem-digite-texto{
+    line-height: 24px;
+    font-size: 22px;
+    text-align: center;
+    color: silver;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 .container-principal{
@@ -32,6 +53,7 @@ body{
     width: 1150px;
     height: 797px;
     left: 12%;
+    /*border: solid 1px #FFFFFF;*/
 
 
 }
@@ -44,7 +66,7 @@ body{
     border: none;
     outline: none;
     resize: none;
-    color: palegreen;
+    color: whitesmoke;
     display: block;
 	padding: 20px 35px;
 	width: 950px;
@@ -53,7 +75,7 @@ body{
     font-family: 'Inter', sans-serif;
 }
 .input-padrao::placeholder{
-    color: rgb(138, 214, 138);
+    color: silver;
 }
 
 .criptografar{
@@ -64,7 +86,8 @@ body{
     height: 55px;
     font-size: 22px;
     border-radius: 20px;
-    background: palegreen;
+    background: rebeccapurple;
+    color: white;
     font-weight: 500;
     border: none;
     cursor: pointer;
@@ -81,7 +104,7 @@ body{
     font-size: 22px;
     border-radius: 20px;
     background: none;
-    border: solid 1px palegreen;
+    border: solid 2px rebeccapurple;
     color: silver;
     cursor: pointer;
 }
