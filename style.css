@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #222222;
 }
@@ -25,6 +30,10 @@ body {
 #render {
     margin-top: 180px;
     margin-left: 50px;
+}
+
+.output-padrao {
+
 }
 
 #output-padrao {
@@ -58,6 +67,7 @@ body {
     text-align: center;
     line-height: 24px;
     margin-top: 30px;
+
 }
 
 #mensagem-digite-texto {
@@ -146,4 +156,16 @@ body {
     border: solid 2px rebeccapurple;
     color: silver;
     cursor: pointer;
+}
+
+footer{
+    
+    margin: auto;
+}
+
+h1{
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
 }
