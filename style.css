@@ -1,17 +1,14 @@
-
-
-
-
-body{
-    background-color: #222222;    
+body {
+    background-color: #222222;
 }
 
-.logo{
+.logo {
     margin-left: 50px;
     margin-top: 30px;
+
 }
 
-.container-copiar{
+.container-copiar {
     position: relative;
     background: #333333;
     color: white;
@@ -25,12 +22,37 @@ body{
     /*border: solid 1px #eb0000;*/
 }
 
-.render{
+#render {
     margin-top: 180px;
     margin-left: 50px;
 }
 
-.mensagem-encontrada{
+#output-padrao {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background: #333333;
+    border: none;
+    outline: none;
+    resize: none;
+    color: silver;
+    padding: 5px 3px;
+    width: 390px;
+    height: 500px;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    /*border: solid rgb(255, 0, 191) 1px;*/
+}
+
+.esconde {
+    display: none;
+}
+
+.mostra {
+    display: block;
+}
+
+#mensagem-encontrada {
     font-weight: bold;
     font-size: 33px;
     text-align: center;
@@ -38,7 +60,7 @@ body{
     margin-top: 30px;
 }
 
-#mensagem-digite-texto{
+#mensagem-digite-texto {
     line-height: 24px;
     font-size: 22px;
     text-align: center;
@@ -47,7 +69,7 @@ body{
     font-weight: 400;
 }
 
-.container-principal{
+.container-principal {
     background: #222222;
     position: relative;
     width: 1150px;
@@ -56,9 +78,24 @@ body{
     /*border: solid 1px #FFFFFF;*/
 
 
+
 }
 
-.input-padrao{
+#copiar {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 350px;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 20px;
+    background: none;
+    border: solid 2px rebeccapurple;
+    color: silver;
+    cursor: pointer;
+}
+
+.input-padrao {
     position: absolute;
     top: 70px;
     left: 60px;
@@ -68,17 +105,19 @@ body{
     resize: none;
     color: whitesmoke;
     display: block;
-	padding: 20px 35px;
-	width: 950px;
+    padding: 20px 35px;
+    width: 950px;
     height: 350px;
     font-size: 45px;
     font-family: 'Inter', sans-serif;
+    /*border: solid yellow 1px;*/
 }
-.input-padrao::placeholder{
+
+.input-padrao::placeholder {
     color: silver;
 }
 
-.criptografar{
+.criptografar {
     position: absolute;
     bottom: 50px;
     left: 95px;
@@ -95,7 +134,7 @@ body{
 
 
 
-.descriptografar{
+.descriptografar {
     position: absolute;
     bottom: 50px;
     left: 550px;
@@ -108,4 +147,3 @@ body{
     color: silver;
     cursor: pointer;
 }
-

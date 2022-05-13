@@ -15,23 +15,28 @@
 <body>
     <header>
         <img class="logo" src="img/logo.svg" alt="">
-
-        <div class="container-copiar">
-   
-            <img class="render" src="img/render-azul.svg" alt="">
-            <p class="mensagem-encontrada">Nenhuma mensagem encontrada</p>
-            <p id="mensagem-digite-texto">Digite um texto que você deseja criptografar ou descriptografar</p>
-        </div>
-
-        <div class="container-principal">
-            <textarea placeholder="Digite seu texto" cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
-            <input class="criptografar" type="submit" value="Criptografar">
-            <input class="descriptografar" type="submit" value="Descriptografar">
-        </div>
-
-        
-
     </header>
+
+    <section class="container-copiar">
+        <img id="render" src="img/render-azul.svg" alt="">
+        <textarea id="output-padrao" name="" id="" cols="30" rows="10"></textarea>
+        <p id="mensagem-encontrada">Nenhuma mensagem encontrada</p>
+        <p id="mensagem-digite-texto">Digite um texto que você deseja criptografar ou descriptografar</p>
+        <input class="copiar" id="copiar" type="submit" value="Copiar">
+    </section>
+
+    <section class="container-principal">
+        <textarea placeholder="Digite seu texto" cols="70" rows="10" id="input-padrao" class="input-padrao"></textarea>
+        <input class="criptografar" type="submit" value="Criptografar">
+        <input class="descriptografar" type="submit" value="Descriptografar">
+    </section>
+
+    <footer>
+        <h1 style="background-color: black; color: white;">Um rodapé com os dados da pessoa que desenvolveu o site!</h1>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="logicaIncriptar.js"></script>
 </body>
 
 </html>
