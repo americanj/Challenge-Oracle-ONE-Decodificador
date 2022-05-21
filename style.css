@@ -76,6 +76,7 @@ body {
 
 
 #copiar {
+    display: none;
     box-sizing: border-box;
 
     background: #333333;
@@ -248,16 +249,51 @@ body {
     transition: 1s;
 }
 
-.game-over{
+.game-over {
+    display: none;
     margin: 0 auto;
+    top: 170px;
     position: relative;
-    width: 400px;
-    height: 200px;
-    background: red;
+    width: 900px;
+    height: 400px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.78);
+    border: solid aqua 1px;
+}
+
+.texto-game-over {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    font-size: 35px;
+    color: aqua;
+    font-weight: bold;
+    font-family: 'Inter';
+}
+
+.btn-sim {
+    box-sizing: border-box;
+
+    background: #222222;
+    color: aqua;
+    font-size: 22px;
+
+    position: relative;
+    width: 336px;
+    height: 67px;
+    top: 195px;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid rgb(0, 255, 0);
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 1s;
 }
 
 
 
 .invisivel {
     display: none;
+
 }
