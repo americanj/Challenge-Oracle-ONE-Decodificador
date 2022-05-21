@@ -1,131 +1,158 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: #222222;
+    background: #222222;
 }
 
 .logo {
-    margin-left: 50px;
+    position: absolute;
     margin-top: 30px;
-
+    margin-left: 30px;
 }
 
 .container-copiar {
-    display: block;
     position: absolute;
+    width: 400px;
+    height: 744px;
+    right: 0;
+    margin: 0 50px 0 0;
+    top: 45px;
     background: #333333;
-    color: white;
-    /*float: right;*/
-    height: 90%;
-    width: 26%;
-    right: 6.8%;
-    bottom: 6%;
-    border-radius: 30px;
-    /*border: solid 1px #eb0000;*/
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
 }
 
 #render {
-    margin-top: 18%;
-    margin-left: 50px;
+
+    position: absolute;
+    top: 0px;
+    right: -23px;
+
 }
 
 .output-padrao {
-
-}
-
-#output-padrao {
     position: relative;
     top: 30px;
-    left: 30px;
+    right: 2px;
+    left: 3px;
+
+    padding: 20px;
+    width: 350px;
+    font-size: 35px;
+
     background: #333333;
+
     border: none;
     outline: none;
     resize: none;
     color: silver;
-    padding: 5px 3px;
-    width: 83%;
-    height: 70%;
-    font-size: 30px;
+
     font-family: 'Inter', sans-serif;
-    /*border: solid rgb(255, 0, 191) 1px;*/
 }
 
-.esconde {
-    display: none;
-}
+#mini-container-output {
 
-.mostra {
-    display: block;
+    margin-left: 30px;
+    position: absolute;
+    width: 336px;
+    height: 122px;
+
+    top: 520px;
+    /*border: cornflowerblue 1px solid;*/
 }
 
 #mensagem-encontrada {
-    width: 90%;
+    color: white;
     font-weight: bold;
-    font-size: 33px;
     text-align: center;
-    /*line-height: 24px;*/
-    margin-top: 30px;
-
+    font-size: 33px;
 }
 
 #mensagem-digite-texto {
-    width: 90%;
-    margin-top: 3%;
-    line-height: 24px;
-    font-size: 22px;
-    text-align: center;
     color: silver;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
 }
 
-.container-principal {
-    display: block;
-    background: #222222;
-    /*position: relative;*/
-    width: 1150px;
-    height: 797px;
-    left: 12%;
-    /*border: solid 1px #FFFFFF;*/
 
-
-
-}
 
 #copiar {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    width: 350px;
-    height: 55px;
+    box-sizing: border-box;
+
+    background: #333333;
+    color: darkcyan;
     font-size: 22px;
-    border-radius: 20px;
-    background: none;
-    border: solid 2px rebeccapurple;
-    color: silver;
+
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 32px;
+    top: 650px;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid darkcyan;
+    border-radius: 24px;
     cursor: pointer;
+}
+
+#copiar:hover {
+    box-sizing: border-box;
+
+    background: #333333;
+    color: aqua;
+    font-size: 22px;
+
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 32px;
+    top: 650px;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid aqua;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/*#########################################################################3*/
+
+
+
+.container-principal {
+    position: absolute;
+    /*border: solid 1px yellow;*/
+    width: 900px;
+    height: 618px;
+    left: 240px;
+    top: 168px;
+
 }
 
 .input-padrao {
 
-    position: absolute;
-    top: 20%;
-    left: 5%;
+    width: 860px;
+    height: 288px;
+    left: 240px;
+    top: 168px;
+    padding: 20px;
+
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+
+
     background: #222222;
     border: none;
     outline: none;
     resize: none;
-    color: whitesmoke;
-    display: block;
-    padding: 20px 35px;
-    width: 50%;
-    height: 40%;
-    font-size: 45px;
-    font-family: 'Inter', sans-serif;
-    /*border: solid yellow 1px;*/
+
+    color: silver;
 }
 
 .input-padrao::placeholder {
@@ -133,44 +160,104 @@ body {
 }
 
 .criptografar {
-    position: absolute;
-    bottom: 50px;
-    left: 95px;
-    width: 350px;
-    height: 55px;
+
+    box-sizing: border-box;
+
+    background: #333333;
+    color: darkcyan;
     font-size: 22px;
-    border-radius: 20px;
-    background: rebeccapurple;
-    color: white;
-    font-weight: 500;
-    border: none;
+
+    position: relative;
+    width: 336px;
+    height: 67px;
+
+    top: 195px;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid darkcyan;
+    border-radius: 24px;
     cursor: pointer;
+
 }
 
 
+
+
+.criptografar:hover {
+    box-sizing: border-box;
+
+    background: #333333;
+    color: aqua;
+    font-size: 22px;
+
+    position: relative;
+    width: 336px;
+    height: 67px;
+
+    top: 195px;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid aqua;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 1s;
+}
 
 .descriptografar {
-    position: absolute;
-    bottom: 50px;
-    left: 550px;
-    width: 350px;
-    height: 55px;
+
+    box-sizing: border-box;
+
+    background: #222222;
+    color: darkcyan;
     font-size: 22px;
-    border-radius: 20px;
-    background: none;
-    border: solid 2px rebeccapurple;
-    color: silver;
+
+    position: relative;
+    width: 336px;
+    height: 67px;
+    margin-left: 224px;
+    top: 195px;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid darkcyan;
+    border-radius: 24px;
     cursor: pointer;
 }
 
-footer{
-    
-    margin: auto;
+.descriptografar:hover {
+
+    box-sizing: border-box;
+
+    background: #222222;
+    color: aqua;
+    font-size: 22px;
+
+    position: relative;
+    width: 336px;
+    height: 67px;
+    margin-left: 224px;
+    top: 195px;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid aqua;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 1s;
 }
 
-h1{
-    padding: 5px;
-    padding-bottom: 10px;
-    text-align: center;
-    font-size: 30px;
+.game-over{
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: red;
+}
+
+
+
+.invisivel {
+    display: none;
 }

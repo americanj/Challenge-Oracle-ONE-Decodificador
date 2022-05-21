@@ -14,10 +14,12 @@ var mensagemDigiteTexto = document.querySelector("#mensagem-digite-texto");
 
 var botaoCopiar = document.querySelector(".copiar");
 
-outputPadrao.classList.add("esconde");
-botaoCopiar.classList.add("esconde");
 
-//criptografar.style.display = "none"
+var containerMensagens = document.querySelector("#mini-container-output");
+
+//outputPadrao.classList.add("invisivel");
+outputPadrao.classList.add("invisivel");
+botaoCopiar.classList.add("invisivel");
 
 criptografar.addEventListener("click", function () {
     //inputPadrao.value = "";
@@ -25,12 +27,11 @@ criptografar.addEventListener("click", function () {
     if (inputPadrao.value !== "") {
         
         BtnEncriptar();
-        imagem.classList.add("esconde");
-        mensagemEncontrada.classList.add("esconde");
-        mensagemDigiteTexto.classList.add("esconde");
-
-        outputPadrao.classList.add("mostra");
-        botaoCopiar.classList.add("mostra");
+        outputPadrao.classList.remove("invisivel");
+        botaoCopiar.classList.remove("invisivel");
+        imagem.classList.add("invisivel");
+        containerMensagens.classList.add("invisivel");
+        
 
     }
     else {
@@ -43,36 +44,18 @@ criptografar.addEventListener("click", function () {
 
 
 
-descriptografar.addEventListener("click", function () {
-
-
-    if (inputPadrao.value !== "") {
-        
-        btnDescriptar();
-        outputPadrao.style.display = "inline-block";
-        imagem.style.display = "none";
-        mensagemEncontrada.style.display = "none"
-        mensagemDigiteTexto.style.display = "none";
-
-    }
-    else {
-        alert("Preencha os campos");
-    }
-    botaoCopiar.style.display = "block";
-})
-
 
 
 botaoCopiar.addEventListener("click", function () {
     
-
     btnCopiar();
-    outputPadrao.style.display = "none";
-    botaoCopiar.style.display = "none";
+    outputPadrao.classList.add("invisivel");
+    botaoCopiar.classList.add("invisivel");
 
-    imagem.style.display = "block";
-    mensagemEncontrada.style.display = "block";
-    mensagemDigiteTexto.style.display = "block";
+    imagem.classList.remove("invisivel");
+    
+    containerMensagens.classList.remove("invisivel");
+ 
 })
 
 function btnCopiar() {
@@ -88,4 +71,25 @@ function btnCopiar() {
 
 
 }
+
+
+
+descriptografar.addEventListener("click", function () {
+
+
+    if (inputPadrao.value !== "") {
+        
+        btnDescriptar();
+        outputPadrao.classList.add("invisivel");
+        imagem.classList.remove("invisivel");
+
+        containerMensagens.classList.add("invisivel");
+
+    }
+    else {
+        alert("Preencha os campos");
+    }
+    botaoCopiar.classList.remove("invisivel");
+    alert("reinicie a página para tentar novamente");
+})
 

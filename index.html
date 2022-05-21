@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,27 +18,29 @@
     <header>
         <img class="logo" src="img/logo.svg" alt="">
     </header>
+    <main>
+        <section class="container-copiar">
+            <img id="render" src="img/giphy2.gif" alt="">
+            <textarea class="output-padrao" id="output-padrao" name="" id="" cols="30" rows="10"></textarea>
+            <div id="mini-container-output">
+                <p id="mensagem-encontrada">Nenhuma mensagem encontrada</p>
+                <p id="mensagem-digite-texto">Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <input class="copiar" id="copiar" type="submit" value="Copiar">
+        </section>
 
-    <section class="container-copiar">
-        <img id="render" src="img/render-azul.svg" alt="">
-        <textarea class="output-padrao" id="output-padrao" name="" id="" cols="30" rows="10"></textarea>
-        <p id="mensagem-encontrada">Nenhuma mensagem encontrada</p>
-        <p id="mensagem-digite-texto">Digite um texto que você deseja criptografar ou descriptografar</p>
-        <input class="copiar" id="copiar" type="submit" value="Copiar">
-    
-    </section>
+        <section class="container-principal">
+            <textarea placeholder="Digite seu texto" cols="70" rows="10" id="input-padrao"
+                class="input-padrao"></textarea>
+            <input class="criptografar" type="submit" value="Criptografar">
+            <input class="descriptografar" type="submit" value="Descriptografar">
+        </section>
 
-    <section class="container-principal">
-        <textarea placeholder="Digite seu texto" cols="70" rows="10" id="input-padrao" class="input-padrao"></textarea>
-        <input class="criptografar" type="submit" value="Criptografar">
-        <input class="descriptografar" type="submit" value="Descriptografar">
-    </section>
+        <section class="game-over">
+            <h3 style="font-size: 20px;">OLAAAAAAAAAAAAAAAAAAAAA</h3>
+        </section>
+    </main>
 
-    <br>
-
-    <footer>
-        <h1 style="background-color: rgba(0, 0, 0, 0.374); color: white;">© copyright oliveiradeigor - 2022 | Site em manutenção</h1>
-    </footer>
 
     <script src="script.js"></script>
     <script src="logicaIncriptar.js"></script>

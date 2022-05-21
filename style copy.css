@@ -1,0 +1,202 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222222;
+}
+
+.logo {
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+
+.container-copiar {
+    display: block;
+    position: absolute;
+    background: #333333;
+    color: white;
+    /*float: right;*/
+    height: 90%;
+    width: 26%;
+    right: 6.8%;
+    bottom: 6%;
+    border-radius: 30px;
+    /*border: solid 1px #eb0000;*/
+}
+
+#render {
+    margin-top: 18%;
+    margin-left: 50px;
+}
+
+.output-padrao {
+
+}
+
+#output-padrao {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background: #333333;
+    border: none;
+    outline: none;
+    resize: none;
+    color: silver;
+    padding: 5px 3px;
+    width: 83%;
+    height: 70%;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    /*border: solid rgb(255, 0, 191) 1px;*/
+}
+
+.esconde {
+    display: none;
+}
+
+.mostra {
+    display: block;
+}
+
+#mensagem-encontrada {
+    width: 90%;
+    font-weight: bold;
+    font-size: 33px;
+    text-align: center;
+    /*line-height: 24px;*/
+    margin-top: 30px;
+
+}
+
+#mensagem-digite-texto {
+    width: 90%;
+    margin-top: 3%;
+    line-height: 24px;
+    font-size: 22px;
+    text-align: center;
+    color: silver;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.container-principal {
+    display: block;
+    background: #222222;
+    /*position: relative;*/
+    width: 1150px;
+    height: 797px;
+    left: 12%;
+    /*border: solid 1px #FFFFFF;*/
+
+
+
+}
+
+#copiar {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 350px;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 20px;
+    background: none;
+    border: solid 2px rebeccapurple;
+    color: silver;
+    cursor: pointer;
+}
+
+.input-padrao {
+
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    background: #222222;
+    border: none;
+    outline: none;
+    resize: none;
+    color: whitesmoke;
+    display: block;
+    padding: 20px 35px;
+    width: 50%;
+    height: 40%;
+    font-size: 45px;
+    font-family: 'Inter', sans-serif;
+    /*border: solid yellow 1px;*/
+}
+
+.input-padrao::placeholder {
+    color: silver;
+}
+
+.criptografar {
+    position: absolute;
+    bottom: 50px;
+    left: 95px;
+    width: 350px;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 20px;
+    background: rebeccapurple;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.descriptografar {
+    position: absolute;
+    bottom: 50px;
+    left: 550px;
+    width: 350px;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 20px;
+    background: none;
+    border: solid 2px rebeccapurple;
+    color: silver;
+    cursor: pointer;
+}
+
+footer{
+    
+    margin: auto;
+}
+
+h1{
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
