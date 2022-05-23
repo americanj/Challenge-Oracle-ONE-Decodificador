@@ -10,38 +10,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/logo-azul.svg" type="image/x-icon">
-    <title>Decodificador de mensagem</title>
+    <link rel="shortcut icon" href="https://www.alura.com.br/assets/favicon.1647533642.ico" type="image/x-icon">
+    <title>Codificador & Decodificador de mensagem</title>
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="img/logo.svg" alt="">
-    </header>
-    <main>
-        <section class="container-copiar">
-            <img id="render" src="img/giphy2.gif" alt="">
-            <textarea class="output-padrao" id="output-padrao" name="" id="" cols="30" rows="10"></textarea>
-            <div id="mini-container-output">
-                <p id="mensagem-encontrada">Nenhuma mensagem encontrada</p>
-                <p id="mensagem-digite-texto">Digite um texto que você deseja criptografar ou descriptografar</p>
-            </div>
-            <input class="copiar" id="copiar" type="submit" value="Copiar">
-        </section>
+    <div class="container">
+        <div class="container-conteudo">
+            <header>
+                <img class="logo" src="img/logo-agua.svg" alt="">
+            </header>
 
-        <section class="container-principal">
-            <textarea placeholder="Digite seu texto" cols="70" rows="10" id="input-padrao"
-                class="input-padrao"></textarea>
-            <input class="criptografar" type="submit" value="Criptografar">
-            <input class="descriptografar" type="submit" value="Descriptografar">
-        </section>
+            <main>
+                <section class="container-copiar">
+                    <img id="render" src="img/giphy2.gif" alt="">
+                    <textarea class="output-padrao" id="output-padrao" name="" id="" cols="30" rows="10"></textarea>
+                    <div id="mini-container-output">
+                        <p id="mensagem-encontrada">Nenhuma mensagem encontrada</p>
+                        <p id="mensagem-digite-texto">Digite um texto que você deseja criptografar ou descriptografar
+                        </p>
+                    </div>
+                    <input class="copiar" id="copiar" type="submit" value="Copiar">
+                </section>
 
-        <section class="game-over">
-            <h3 class="texto-game-over">Criptografar uma nova mensagem?</h3>
-            <input class="btn-sim" type="text">
-            <input class="btn-nao" type="text">
-        </section>
-    </main>
+                <section class="container-principal">
+                    <textarea placeholder="Digite seu texto" cols="70" rows="10" id="input-padrao"
+                        class="input-padrao"></textarea>
+                    <input class="criptografar" type="submit" value="Criptografar">
+                    <input class="descriptografar" type="submit" value="Descriptografar">
+                </section>
+            </main>
+        </div>
+    </div>
 
 
     <script src="script.js"></script>
